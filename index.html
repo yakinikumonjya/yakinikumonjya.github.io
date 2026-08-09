@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,42 +21,157 @@ body {
 a { color:var(--accent2); text-decoration:none; }
 a:hover { text-decoration:underline; }
 .container { width:min(1100px,92%); margin:auto; }
-header { padding:22px 0; border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(16,10,29,.92); backdrop-filter:blur(10px); z-index:5; }
-nav { display:flex; justify-content:space-between; align-items:center; gap:20px; }
-.logo { font-weight:900; letter-spacing:.08em; font-size:20px; }
-nav .links { display:flex; gap:24px; font-size:14px; }
-.hero { padding:100px 0 70px; text-align:center; }
-.badge { display:inline-block; border:1px solid #5a3d18; background:#24160a; color:var(--accent2); padding:7px 14px; border-radius:999px; font-size:13px; }
-h1 { font-size:clamp(42px,7vw,76px); line-height:1.05; margin:20px 0 16px; letter-spacing:-.04em; }
-.hero p { max-width:700px; margin:0 auto; color:var(--muted); font-size:18px; }
-.button { display:inline-block; margin-top:30px; background:var(--accent); color:#1a0e00; padding:13px 22px; border-radius:8px; font-weight:800; }
-section { padding:75px 0; }
-h2 { font-size:34px; margin:0 0 12px; }
-.lead { color:var(--muted); margin-top:0; }
-.card { background:var(--panel); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
-.work-image { width:100%; display:block; }
-.work-body { padding:26px; }
-.tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
-.tag { border:1px solid var(--line); border-radius:999px; padding:5px 10px; color:var(--muted); font-size:13px; }
-.about { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
-.info { padding:28px; }
-.info h3 { margin-top:0; }
-footer { border-top:1px solid var(--line); padding:35px 0; color:var(--muted); font-size:14px; }
+header {
+  padding:22px 0;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  background:rgba(16,10,29,.92);
+  backdrop-filter:blur(10px);
+  z-index:5;
+}
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.logo {
+  font-weight:900;
+  letter-spacing:.08em;
+  font-size:20px;
+}
+nav .links {
+  display:flex;
+  gap:24px;
+  font-size:14px;
+}
+.hero {
+  padding:100px 0 70px;
+  text-align:center;
+}
+.badge {
+  display:inline-block;
+  border:1px solid #5a3d18;
+  background:#24160a;
+  color:var(--accent2);
+  padding:7px 14px;
+  border-radius:999px;
+  font-size:13px;
+}
+h1 {
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.05;
+  margin:20px 0 16px;
+  letter-spacing:-.04em;
+}
+.hero p {
+  max-width:700px;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:18px;
+}
+.button {
+  display:inline-block;
+  margin-top:30px;
+  background:var(--accent);
+  color:#1a0e00;
+  padding:13px 22px;
+  border-radius:8px;
+  font-weight:800;
+}
+section {
+  padding:75px 0;
+}
+h2 {
+  font-size:34px;
+  margin:0 0 12px;
+}
+.lead {
+  color:var(--muted);
+  margin-top:0;
+}
+.card {
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+}
+.work-image {
+  width:100%;
+  display:block;
+}
+.work-body {
+  padding:26px;
+}
+.tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:18px;
+}
+.tag {
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:5px 10px;
+  color:var(--muted);
+  font-size:13px;
+}
+.about {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.info {
+  padding:28px;
+}
+.info h3 {
+  margin-top:0;
+}
+.youtube-button {
+  display:inline-block;
+  margin-top:10px;
+  background:#ff0000;
+  color:#ffffff;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:800;
+}
+.youtube-button:hover {
+  text-decoration:none;
+  opacity:.9;
+}
+footer {
+  border-top:1px solid var(--line);
+  padding:35px 0;
+  color:var(--muted);
+  font-size:14px;
+}
 @media(max-width:700px) {
-  nav .links { gap:12px; }
-  .about { grid-template-columns:1fr; }
-  .hero { padding-top:70px; }
+  nav .links {
+    gap:12px;
+  }
+  .about {
+    grid-template-columns:1fr;
+  }
+  .hero {
+    padding-top:70px;
+  }
 }
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="container">
     <nav>
       <div class="logo">YAKINIKU GAMES</div>
+
       <div class="links">
         <a href="#works">Works</a>
         <a href="#about">About</a>
+        <a href="#youtube">YouTube</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -63,68 +179,166 @@ footer { border-top:1px solid var(--line); padding:35px 0; color:var(--muted); f
 </header>
 
 <main>
+
 <section class="hero">
   <div class="container">
     <span class="badge">3D GAME ASSETS · UNITY</span>
+
     <h1>YAKINIKU GAMES</h1>
-    <p>Creating stylized, game-ready 3D assets for indie developers and game creators.</p>
+
+    <p>
+      Creating stylized, game-ready 3D assets for indie developers and game creators.
+    </p>
+
     <a class="button" href="#works">View Works</a>
   </div>
 </section>
 
+
 <section id="works">
   <div class="container">
+
     <h2>Selected Work</h2>
-    <p class="lead">3D assets created for games and the Unity Asset Store.</p>
+
+    <p class="lead">
+      3D assets created for games and the Unity Asset Store.
+    </p>
+
     <div class="card">
-      <img class="work-image" src="treasure-chest-pack.jpg" alt="Treasure Chest Pack">
+
+      <img
+        class="work-image"
+        src="treasure-chest-pack.jpg"
+        alt="Treasure Chest Pack"
+      >
+
       <div class="work-body">
+
         <h3>Treasure Chest Pack</h3>
-        <p>Five treasure chest types with five color variations each, for a total of 25 items. The pack also includes opening animations and is designed for use in Unity projects.</p>
+
+        <p>
+          Five treasure chest types with five color variations each,
+          for a total of 25 items. The pack also includes opening
+          animations and is designed for use in Unity projects.
+        </p>
+
         <div class="tags">
           <span class="tag">Unity</span>
           <span class="tag">3D Models</span>
           <span class="tag">25 Items</span>
           <span class="tag">Animations</span>
         </div>
+
       </div>
     </div>
+
   </div>
 </section>
+
 
 <section id="about">
   <div class="container">
+
     <h2>About</h2>
-    <p class="lead">Independent game asset creator.</p>
+
+    <p class="lead">
+      Independent game asset creator.
+    </p>
+
     <div class="about">
+
       <div class="card info">
         <h3>What I Create</h3>
-        <p>YAKINIKU GAMES focuses on practical, ready-to-use 3D assets for games, with an emphasis on clear presentation and easy integration into Unity projects.</p>
+
+        <p>
+          YAKINIKU GAMES focuses on practical, ready-to-use 3D assets
+          for games, with an emphasis on clear presentation and easy
+          integration into Unity projects.
+        </p>
       </div>
+
       <div class="card info">
         <h3>Tools</h3>
-        <p>Blender · Unity · 3D Modeling · Texturing · Animation</p>
+
+        <p>
+          Blender · Unity · 3D Modeling · Texturing · Animation
+        </p>
       </div>
+
     </div>
   </div>
 </section>
 
-<section id="contact">
+
+<section id="youtube">
   <div class="container">
-    <h2>Contact</h2>
-    <p class="lead">For business inquiries, licensing questions, or support, please contact:</p>
+
+    <h2>YouTube</h2>
+
+    <p class="lead">
+      3D modeling, Blender, and game development videos.
+    </p>
+
     <div class="card info">
-      <p><strong>Email:</strong> <a href="mailto:pjsosmonjya@gmail.com">pjsosmonjya@gmail.com</a></p>
-      <p style="color:var(--muted);font-size:14px;">Please replace the email address above with your actual contact email before publishing this website.</p>
+
+      <h3>3Dのメモ帳</h3>
+
+      <p>
+        Check out my YouTube channel for 3D modeling,
+        Blender, and game development content.
+      </p>
+
+      <a
+        class="youtube-button"
+        href="https://www.youtube.com/@3dmemo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit YouTube Channel
+      </a>
+
     </div>
+
   </div>
 </section>
+
+
+<section id="contact">
+  <div class="container">
+
+    <h2>Contact</h2>
+
+    <p class="lead">
+      For business inquiries, licensing questions, or support, please contact:
+    </p>
+
+    <div class="card info">
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:pjsosmonjya@gmail.com">
+          pjsosmonjya@gmail.com
+        </a>
+      </p>
+
+      <p style="color:var(--muted);font-size:14px;">
+        Please replace the email address above with your actual contact email before publishing this website.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
 </main>
+
 
 <footer>
   <div class="container">
     © 2026 YAKINIKU GAMES. All rights reserved.
   </div>
 </footer>
+
 </body>
 </html>
+```
